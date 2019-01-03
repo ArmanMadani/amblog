@@ -28,14 +28,7 @@ Vue.use(VueMoment)
 Vue.config.productionTip = false
 Vue.component(VueFeather.name, VueFeather);
 
-firebase.initializeApp({
-    apiKey: "AIzaSyDuoTLqP7tRo4vIOAIzHloB2AoC34MCVy8",
-    authDomain: "armanmadani-subscribers.firebaseapp.com",
-    databaseURL: "https://armanmadani-subscribers.firebaseio.com",
-    projectId: "armanmadani-subscribers",
-    storageBucket: "armanmadani-subscribers.appspot.com",
-    messagingSenderId: "1029564201603"
-  })
+//firestore credentials
 
 const db = firebase.firestore()
 const settings = {timestampsInSnapshots: true};
